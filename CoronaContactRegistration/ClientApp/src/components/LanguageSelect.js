@@ -1,13 +1,14 @@
-﻿import React from 'react';
-import Questionaire from './Questionaire'
-import LocalizedStrings from 'react-localization'
+﻿import React, { useState} from 'react'
+import { useTranslation } from 'react-i18next'
 
 const LanguageSelect = (props) => {
-	const options = ["NL", "EN", "DE"];
+	const options = ["nl", "en", "de"];
 
 	return (
 		<div>
-		</div>);
+
+		</div>
+	);
 };
 
 export default LanguageSelect;

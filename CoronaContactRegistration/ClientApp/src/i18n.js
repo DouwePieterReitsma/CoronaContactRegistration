@@ -14,8 +14,7 @@ i18n.use(Backend)
             cache: ["c"]
         },
         interpolation: {
-            escapeValue: false,
-
+            escapeValue: false
         }
     });
 
