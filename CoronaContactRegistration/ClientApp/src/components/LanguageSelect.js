@@ -7,7 +7,6 @@ const LanguageSelect = (props) => {
 
 	return (
 		<div>
-
 		</div>);
 };
 

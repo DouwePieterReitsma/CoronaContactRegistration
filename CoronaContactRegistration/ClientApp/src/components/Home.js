@@ -2,6 +2,7 @@
 import { Container, Row, Col } from 'reactstrap';
 import LanguageSelect from './LanguageSelect'
 import Questionaire from './Questionaire';
+import CustomerDataForm from './CustomerDataForm'
 
 const Home = (props) => {
 	const [acceptedPrivacyPolicy, setAcceptedPrivacyPolicy] = useState(false);
@@ -15,7 +16,7 @@ const Home = (props) => {
 			</Row>
 			<Row>
 				<Col sm="12" md={{ size: 6, offset: 3 }}>
-					<Questionaire />
+					<CustomerDataForm />
 				</Col>
 			</Row>
 		</Container>);

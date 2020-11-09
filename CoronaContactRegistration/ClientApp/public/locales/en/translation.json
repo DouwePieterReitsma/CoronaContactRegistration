@@ -1,0 +1,13 @@
+﻿{
+  "name": "Name",
+  "phoneNumber": "Phone number",
+  "email": "Email",
+  "question1": "Did you have one or more of these complaints in the past 24 hours?",
+  "question2": "Do you currently have a roommate with a fever and/or shortness of breath?",
+  "question3": "Did you have the coronavirus and has it been diagnosed in the past 7 days (in a laboratory)?",
+  "question4": "Do you have a roommate/family member with the new coronavirus and have you had contact with him / her in the past 14 days while he / she still had complaints?",
+  "question5": "Are you in quarantine because you had direct contact with someone who has been diagnosed with the new coronavirus ?",
+  "yes": "Yes",
+  "no": "No",
+  "submit": "Submit"
+}

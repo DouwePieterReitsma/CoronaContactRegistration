@@ -1,0 +1,13 @@
+﻿{
+  "name": "Naam",
+  "phoneNumber": "Telefoonnummer",
+  "email": "E-mail",
+  "question1": "Heb je een of meerdere van deze klachten (gehad in de afgelopen 24 uur)?",
+  "question2": "Heb je op dit moment een huisgenoot met koorts en/of benauwheidsklachten?",
+  "question3": "Heb je het nieuwe coronavirus gehad en is dit de afgelopen 7 dagen vastgesteld (in een lab)?",
+  "question4": "Heb je een huisgenoot/gezinslid met het nieuwe coronavirus en heb je in de afgelopen 14 dagen contact met hem/ haar gehad terwijl hij/ zij nog klachten had ?",
+  "question5": "Ben je in quarantaine omdat je direct contact hebt gehad met iemand waarbij het nieuwe coronavirus is vastgesteld?",
+  "yes": "Ja",
+  "no": "Nee",
+  "submit": "Verstuur"
+}
