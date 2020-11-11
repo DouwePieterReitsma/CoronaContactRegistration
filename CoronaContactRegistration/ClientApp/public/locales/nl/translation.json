@@ -9,5 +9,7 @@
   "question5": "Ben je in quarantaine omdat je direct contact hebt gehad met iemand waarbij het nieuwe coronavirus is vastgesteld?",
   "yes": "Ja",
   "no": "Nee",
-  "submit": "Verstuur"
+  "submit": "Verstuur",
+  "privacyPolicyCheckbox": "Ik ga akkoord met de privacy-overeenkomst.",
+  "language": "Taal"
 }

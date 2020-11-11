@@ -9,5 +9,7 @@
   "question5": "Are you in quarantine because you had direct contact with someone who has been diagnosed with the new coronavirus ?",
   "yes": "Yes",
   "no": "No",
-  "submit": "Submit"
+  "submit": "Submit",
+  "privacyPolicyCheckbox": "I agree to the Privacy Policy.",
+  "language" :  "Language"
 }

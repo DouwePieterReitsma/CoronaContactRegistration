@@ -1,0 +1,15 @@
+{
+  "name": "Name",
+  "phoneNumber": "Telefonnummer",
+  "email": "E-mail",
+  "question1": "Hatten Sie eine oder mehrere dieser Beschwerden in den letzten 24 Stunden?",
+  "question2": "Leben Sie zurzeit mit einer Person in einem Haushalt, die Fieber und/oder Atemschwierigkeit hat?",
+  "question3": "Ist bei Ihnen das neuartige Coronavirus in den letzten vergangenen 7 Tagen (von einem Labor) nachgewiesen worden?",
+  "question4": "Haben Sie eine mit dem neuartigen Coronavirus infizierte Person in Ihrem Haushalt/Ihrer Familie und hatten Sie in den vergangenen 14 Tagen Kontakt zu dieser Person als sie noch unter Beschwerden litt?",
+  "question5": "Befinden Sie sich zurzeit in Quarantäne, weil Sie direkten Kontakt zu einer positiv auf den neuartigen Coronavirus getesteten hatten?",
+  "yes": "Ja",
+  "no": "Nein",
+  "submit": "Senden",
+  "privacyPolicyCheckbox": "Ich akzeptiere die Datenschutzregelung.",
+  "language": "Sprache"
+}

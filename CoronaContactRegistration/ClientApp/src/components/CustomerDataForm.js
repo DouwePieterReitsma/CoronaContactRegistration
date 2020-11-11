@@ -1,10 +1,11 @@
 ﻿import React, { useState } from 'react';
-import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 import { useTranslation } from 'react-i18next'
 
 const CustomerDataForm = (props) => {
     const [name, setName] = useState("");
     const [phoneNumber, setPhoneNumber] = useState("");
+    const [acceptedPrivacyPolicy, setAcceptedPrivacyPolicy] = useState(false);
 
     const [t, i18n] = useTranslation();
 
@@ -24,7 +25,7 @@ const CustomerDataForm = (props) => {
 
         const response = await raw.json();
 
-        console.log(response);
+        alert(JSON.stringify(response));
     };
 
     return (
@@ -37,7 +38,11 @@ const CustomerDataForm = (props) => {
                 <Label for="phoneNumber">{t("phoneNumber")}:</Label>
                 <Input type="tel" name="phoneNumber" id="phoneNumber" value={phoneNumber} onChange={e => setPhoneNumber(e.target.value)} />
             </FormGroup>
-            <Button type="submit">{t("submit")}</Button>
+            <FormGroup check={true}>
+                <Input type="checkbox" id="privacyPolicy" checked={acceptedPrivacyPolicy} onChange={e => setAcceptedPrivacyPolicy(!acceptedPrivacyPolicy)} />
+                <Label for="privacyPolicy">{t("privacyPolicyCheckbox")}</Label>
+            </FormGroup>
+            <Button type="submit" disabled={!(acceptedPrivacyPolicy && name !== "" && phoneNumber !== "")}>{t("submit")}</Button>
         </Form>
     );
 }
