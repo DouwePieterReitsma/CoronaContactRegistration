@@ -2,7 +2,7 @@
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 import { useTranslation } from 'react-i18next'
 
-const CustomerDataForm = (props) => {
+const ContactInformationForm = (props) => {
     const [name, setName] = useState("");
     const [phoneNumber, setPhoneNumber] = useState("");
     const [acceptedPrivacyPolicy, setAcceptedPrivacyPolicy] = useState(false);
@@ -14,18 +14,20 @@ const CustomerDataForm = (props) => {
 
         const data = { name, phoneNumber };
 
-        const raw = await fetch("/api/customerdata/upload", {
+        await fetch("/api/contactinformation/upload", {
             method: "POST",
             headers: {
                 "Accept": "application/json",
                 "Content-Type": "application/json"
             },
             body: JSON.stringify(data)
+        }).then((res) => {
+            alert("THx!!@#!@#!@#");
+        }).catch(async (err) => {
+            const error = await err.json();
+
+            console.log(error);
         });
-
-        const response = await raw.json();
-
-        alert(JSON.stringify(response));
     };
 
     return (
@@ -47,4 +49,4 @@ const CustomerDataForm = (props) => {
     );
 }
 
-export default CustomerDataForm;
+export default ContactInformationForm;

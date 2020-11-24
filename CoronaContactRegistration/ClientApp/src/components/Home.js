@@ -1,6 +1,6 @@
 ﻿import React, { useState } from 'react'
 import { Container, Row, Col, Navbar, NavbarBrand, UncontrolledDropdown, Nav, NavbarToggler, Collapse, DropdownItem, DropdownMenu, DropdownToggle } from 'reactstrap';
-import CustomerDataForm from './CustomerDataForm'
+import ContactInformationForm from './ContactInformationForm'
 import { useTranslation } from 'react-i18next';
 
 const Home = (props) => {
@@ -22,7 +22,6 @@ const Home = (props) => {
                                 {t("language")}
                             </DropdownToggle>
                             <DropdownMenu right>
-
                                 <DropdownItem onClick={e => i18n.changeLanguage("en")}>English</DropdownItem>
                                 <DropdownItem onClick={e => i18n.changeLanguage("de")}>Deutsch</DropdownItem>
                                 <DropdownItem onClick={e => i18n.changeLanguage("nl")}>Nederlands</DropdownItem>
@@ -31,13 +30,11 @@ const Home = (props) => {
                     </Nav>
                 </Collapse>
             </Navbar>
-            <div style={{ marginTop: '15px' }}>
+            <div className="content" style={{ marginTop: '15px' }}>
                 <Container>
                     <Row>
-                    </Row>
-                    <Row>
                         <Col md={{ size: 4, offset: 4 }}>
-                            <CustomerDataForm />
+                            <ContactInformationForm />
                         </Col>
                     </Row>
                 </Container>
