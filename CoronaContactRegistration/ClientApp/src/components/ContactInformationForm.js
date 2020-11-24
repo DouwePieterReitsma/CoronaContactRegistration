@@ -3,6 +3,7 @@ import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 import { useTranslation } from 'react-i18next'
 
 const ContactInformationForm = (props) => {
+    // Form input field states
     const [name, setName] = useState("");
     const [phoneNumber, setPhoneNumber] = useState("");
     const [acceptedPrivacyPolicy, setAcceptedPrivacyPolicy] = useState(false);
@@ -22,7 +23,7 @@ const ContactInformationForm = (props) => {
             },
             body: JSON.stringify(data)
         }).then((res) => {
-            alert("THx!!@#!@#!@#");
+            props.onUpload();
         }).catch(async (err) => {
             const error = await err.json();
 

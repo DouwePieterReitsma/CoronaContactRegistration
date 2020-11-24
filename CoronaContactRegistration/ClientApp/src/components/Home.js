@@ -1,12 +1,13 @@
 ﻿import React, { useState } from 'react'
 import { Container, Row, Col, Navbar, NavbarBrand, UncontrolledDropdown, Nav, NavbarToggler, Collapse, DropdownItem, DropdownMenu, DropdownToggle } from 'reactstrap';
 import ContactInformationForm from './ContactInformationForm'
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next'
+import ThankYouMessage from './ThankYouMessage'
 
 const Home = (props) => {
     const [isOpen, setIsOpen] = useState(false);
-
     const [t, i18n] = useTranslation();
+    const [uploaded, setUploaded] = useState(false);
 
     const toggle = () => setIsOpen(!isOpen);
 
@@ -34,7 +35,7 @@ const Home = (props) => {
                 <Container>
                     <Row>
                         <Col md={{ size: 4, offset: 4 }}>
-                            <ContactInformationForm />
+                            {uploaded ? <ThankYouMessage /> : <ContactInformationForm onUpload={() => setUploaded(true)} />}
                         </Col>
                     </Row>
                 </Container>

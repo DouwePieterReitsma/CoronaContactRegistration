@@ -11,5 +11,6 @@
   "no": "No",
   "submit": "Submit",
   "privacyPolicyCheckbox": "I agree to the Privacy Policy.",
-  "language" :  "Language"
+  "language": "Language",
+  "thankyou" :  "Thank you!"
 }
