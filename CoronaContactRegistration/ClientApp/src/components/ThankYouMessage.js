@@ -6,7 +6,8 @@ const ThankYouMessage = (props) => {
 
     return (
         <div>
-            <h1>{ t("thankyou")}</h1>
+            <h1>{t("thankyou")}</h1>
+            <div>{ }</div>
         </div>
     );
 }

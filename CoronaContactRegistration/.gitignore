@@ -230,3 +230,6 @@ _Pvt_Extensions
 
 # FAKE - F# Make
 .fake/
+
+# hide connection strings from github :)
+dbconfig.json
